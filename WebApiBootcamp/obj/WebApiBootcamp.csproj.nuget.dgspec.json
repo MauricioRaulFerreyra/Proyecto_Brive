@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauri\\OneDrive\\Escritorio\\C#\\WebApiBootcamp\\WebApiBootcamp.csproj": {}
+    "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauri\\OneDrive\\Escritorio\\C#\\WebApiBootcamp\\WebApiBootcamp.csproj": {
+    "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Escritorio\\C#\\WebApiBootcamp\\WebApiBootcamp.csproj",
+        "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj",
         "projectName": "WebApiBootcamp",
-        "projectPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\C#\\WebApiBootcamp\\WebApiBootcamp.csproj",
+        "projectPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj",
         "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\C#\\WebApiBootcamp\\obj\\",
+        "outputPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
