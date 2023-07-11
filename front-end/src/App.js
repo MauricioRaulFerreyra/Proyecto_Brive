@@ -24,7 +24,9 @@ function App() {
         <Route path="/character/:id" element={<CharacterInfo />} />
         <Route path="*" element={<Login />} />
       </Routes>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </BrowserRouter>
   );
 }
