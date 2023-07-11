@@ -1,11 +1,10 @@
 import { useNavigate } from "react-router-dom";
 
-function Footer() {
+export default function Footer() {
+  const navigate = useNavigate();
   return (
-    <footer className="Footer">
-      {/* Contenido del footer */}
-    </footer>
+    <div className="footer-container">
+      <h1>Contenido del footer</h1>
+    </div>
   );
 }
-
-export default Footer;

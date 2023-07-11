@@ -1,9 +1,9 @@
 .NavBar {
-  background-color: #252525;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
+  padding: 0 20px;
 }
 
 .Logo {
@@ -13,6 +13,7 @@
   width: 80px;
   height: 80px;
   background-size: cover;
+  margin-right: 20px;
 }
 
 .Terms {
@@ -22,4 +23,5 @@
   list-style: none;
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
 }
