@@ -1,0 +1,25 @@
+.NavBar {
+  background-color: #252525;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.Logo {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+
+.Terms {
+  background-color: #252525;
+  border: none;
+  color: white;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+}

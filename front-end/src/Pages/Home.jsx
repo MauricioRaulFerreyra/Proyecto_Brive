@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Characters } from "../components/Characters";
+import "../App.css";
 
 function Home() {
   const [characters, setCharacters] = useState([]);
-
+  
   function getCharacters(pageNumber = 1) {
     return fetch("https://rickandmortyapi.com/api/character")
       .then((response) => response.json())
@@ -21,6 +22,7 @@ function Home() {
     consoleCharacters();
   }, []);
 
+  
   return (
     <div className="App">
       <div className="Hero">
@@ -29,13 +31,10 @@ function Home() {
       </div>
 
       <main>
-        <h1>Character list</h1>
+        <h1>Character list </h1>
         <hr />
         <div className="card-container">
-          {characters.length > 0 &&
-            characters.map((character) => (
-              <Characters key={character.id} character={character} />
-            ))}
+          {characters.length > 0 && characters.map((character) => <Characters key={character.id} character={character} />)}
         </div>
       </main>
 
