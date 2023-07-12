@@ -715,27 +715,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mauri\\.nuget\\packages\\": {}
+    "/Users/yessvizcarra/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj",
+      "projectUniqueName": "/Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/WebApiBootcamp.csproj",
       "projectName": "WebApiBootcamp",
-      "projectPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj",
-      "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\obj\\",
+      "projectPath": "/Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/WebApiBootcamp.csproj",
+      "packagesPath": "/Users/yessvizcarra/.nuget/packages/",
+      "outputPath": "/Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/yessvizcarra/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -786,7 +785,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
       }
     }
   }
