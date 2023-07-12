@@ -1,14 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Data.SqlClient;
+﻿using Dapper;
+using Microsoft.AspNetCore.Mvc;
 using System.Data;
-using Dapper;
+using System.Data.SqlClient;
 
 namespace WebApiBootcamp.Controllers
 {
-    [ApiController]
-    [Route("usuario")]
 
-    public class UsuarioController : ControllerBase
+    [ApiController]
+    [Route("prueba")]
+
+    public class PruebaController:ControllerBase
     {
 
         static string connectionDB = @"Data Source=DESKTOP-C8APSN0\SQLEXPRESS;Initial Catalog=DB_ACCESO;Integrated Security=true;";
@@ -18,27 +19,13 @@ namespace WebApiBootcamp.Controllers
 
         public dynamic ListarUsuarios()
         {
-            IEnumerable<Usuario>? lst = null;
             using (var db = new SqlConnection(connectionDB))
             {
                 var sql = "select IdUsuario,Correo,Clave from Usuario";
-                lst = db.Query<Usuario>(sql);
+                var lst = db.Query<Usuario>(sql);
+
+                return lst;
             }
-            return lst;
-        }
-
-        [HttpGet]
-        [Route("listarXid")]
-
-        public dynamic ListarUsuariosXid(int Id)
-        {
-            return new Usuario
-            {
-                IdUsuario = Id,
-                Correo = "mauri",
-                Clave = "123"
-            };
-          
         }
 
         [HttpPost]
@@ -51,16 +38,16 @@ namespace WebApiBootcamp.Controllers
             using (SqlConnection cn = new SqlConnection(connectionDB))
             {
                 SqlCommand cmd = new SqlCommand("SP_ValidarUsuario", cn);
-                cmd.Parameters.AddWithValue("Correo",usuario.Correo);
+                cmd.Parameters.AddWithValue("Correo", usuario.Correo);
                 cmd.Parameters.AddWithValue("Clave", usuario.Clave);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cn.Open();
                 usuario.IdUsuario = Convert.ToInt32(cmd.ExecuteScalar().ToString());
-                
+
             }
 
-            if(usuario.IdUsuario != 0)
+            if (usuario.IdUsuario != 0)
             {
                 return new
                 {
