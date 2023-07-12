@@ -51,3 +51,31 @@ EXEC SP_ValidarUsuario 'mauricio@gmail.com','password123';
 EXEC SP_ValidarUsuario 'jose@gmail.com','password456';
 EXEC SP_ValidarUsuario 'luz@gmail.com','password898';
 EXEC SP_ValidarUsuario 'yesenia@gmail.com','password321';
+
+CREATE TABLE HistorialBusquedas (
+    Numero_Fila INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre_Empresa VARCHAR(50),
+    Total_Empleos INT,
+    Fecha_Busqueda DATE
+);
+INSERT INTO HistorialBusquedas (Nombre_Empresa, Total_Empleos, Fecha_Busqueda)
+VALUES ('Empresa A', 10, '2023-07-12');
+
+SELECT Numero_Fila, Nombre_Empresa, Total_Empleos, Fecha_Busqueda
+FROM HistorialBusquedas;
+
+SELECT COUNT(*) AS total_registros
+FROM HistorialBusquedas;
+
+-- Ascendente
+SELECT Numero_Fila, Nombre_Empresa, Total_Empleos, Fecha_Busqueda
+FROM HistorialBusquedas
+ORDER BY Fecha_Busqueda ASC;
+
+-- Descendente
+SELECT Numero_Fila, Nombre_Empresa, Total_Empleos, Fecha_Busqueda
+FROM HistorialBusquedas
+ORDER BY Fecha_Busqueda DESC;
+
+SELECT Numero_Fila, Nombre_Empresa, Total_Empleos, Fecha_Busqueda
+FROM HistorialBusquedas;
