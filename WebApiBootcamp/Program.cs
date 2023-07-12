@@ -7,7 +7,19 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Enable CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowMyOrigin",
+        builder => builder.WithOrigins("http://localhost:3000")
+                           .AllowAnyMethod()
+                           .AllowAnyHeader());
+});
+
 var app = builder.Build();
+
+// Use the CORS policy
+app.UseCors("AllowMyOrigin");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

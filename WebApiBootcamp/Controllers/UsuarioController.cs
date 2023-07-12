@@ -11,7 +11,7 @@ namespace WebApiBootcamp.Controllers
     public class UsuarioController : ControllerBase
     {
 
-        static string connectionDB = @"Data Source=DESKTOP-C8APSN0\SQLEXPRESS;Initial Catalog=DB_ACCESO;Integrated Security=true;";
+        static string connectionDB = @"Data Source=localhost;Initial Catalog=DB_ACCESO;User Id=sa;Password=12345OHdf%e;";
 
         [HttpGet]
         [Route("listar")]
