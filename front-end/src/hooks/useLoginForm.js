@@ -12,22 +12,21 @@ export function useLoginForm(setIsLoggedIn) {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    // const getPrueba=()=> { 
+    //   return fetch("https://localhost:7146/prueba/listar")
+    //     .then((response) => response.json())
+    //     .then((json) => console.log(json))
+    //     .catch(() => console.log("No funciona"));
+    // };
+    // getPrueba();
     if (email === "" || password === "") {
       setError("Todos los campos son obligatorios");
       return;
     }
 
-    if (email === validEmail && password === validPassword) {
-      setError("");
-      setIsLoggedIn(true); // Establecer isLoggedIn en verdadero
-      navigate("/home");
-    } else if (email !== validEmail) {
-      setError("La cuenta no existe");
-    } else {
-      setError("Contraseña incorrecta");
-    }
-
-    // fetch('https://jsonplaceholder.typicode.com/posts', {
+    // const postPrueba = () => {
+    //   return fetch('https://jsonplaceholder.typicode.com/posts', {
     //   method: 'POST',
     //   body: JSON.stringify({
     //     email: 'foo',
@@ -40,6 +39,18 @@ export function useLoginForm(setIsLoggedIn) {
     // })
     //   .then((response) => response.json())
     //   .then((json) => console.log(json));
+    // }
+
+    if (email === validEmail && password === validPassword) {
+      setError("");
+      setIsLoggedIn(true); // Establecer isLoggedIn en verdadero
+      navigate("/home");
+    } else if (email !== validEmail) {
+      setError("La cuenta no existe");
+    } else {
+      setError("Contraseña incorrecta");
+    }
+    
   }
 
   return {
