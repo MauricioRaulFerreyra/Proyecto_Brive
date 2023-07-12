@@ -715,19 +715,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mauri\\.nuget\\packages\\": {}
+    "C:\\Users\\hdsch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj",
+      "projectUniqueName": "C:\\Users\\hdsch\\Desktop\\Proyecto\\FrontEnd_Proyecto\\WebApiBootcamp\\WebApiBootcamp.csproj",
       "projectName": "WebApiBootcamp",
-      "projectPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj",
-      "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\obj\\",
+      "projectPath": "C:\\Users\\hdsch\\Desktop\\Proyecto\\FrontEnd_Proyecto\\WebApiBootcamp\\WebApiBootcamp.csproj",
+      "packagesPath": "C:\\Users\\hdsch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hdsch\\Desktop\\Proyecto\\FrontEnd_Proyecto\\WebApiBootcamp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hdsch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

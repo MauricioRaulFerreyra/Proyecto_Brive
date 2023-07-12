@@ -37,3 +37,13 @@ C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\De
 C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\Dapper.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\refint\WebApiBootcamp.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.pdb
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.csproj.AssemblyReference.cache
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.AssemblyInfoInputs.cache
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.AssemblyInfo.cs
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.csproj.CoreCompileInputs.cache
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.MvcApplicationPartsAssemblyInfo.cache

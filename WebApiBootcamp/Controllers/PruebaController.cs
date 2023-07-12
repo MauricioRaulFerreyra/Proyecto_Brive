@@ -12,7 +12,7 @@ namespace WebApiBootcamp.Controllers
     public class PruebaController:ControllerBase
     {
 
-        static string connectionDB = @"Data Source=DESKTOP-C8APSN0\SQLEXPRESS;Initial Catalog=DB_ACCESO;Integrated Security=true;";
+        static string connectionDB = @"Data Source=CHEMA-PCMR\SQLEXPRESS;Initial Catalog=DB_ACCESO;Integrated Security=true;";
 
         [HttpGet]
         [Route("listar")]
