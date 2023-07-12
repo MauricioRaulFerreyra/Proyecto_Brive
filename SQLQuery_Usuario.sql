@@ -1,5 +1,8 @@
 
+
 CREATE DATABASE DB_ACCESO;
+
+DROP DATABASE DB_ACCESO;
 
 USE DB_ACCESO;
 
@@ -41,13 +44,16 @@ BEGIN
 END;
 
 DECLARE @Registrado BIT , @Mensaje VARCHAR(50)
-EXEC SP_RegistarUsuario 'mauricio@gmail.com','password123',@Registrado OUTPUT,@Mensaje OUTPUT
+EXEC SP_RegistarUsuario 'Yesenia@gmail.com','password123',@Registrado OUTPUT,@Mensaje OUTPUT
 SELECT @Registrado;
 SELECT @Mensaje;
 
 SELECT * FROM Usuario;
 
-EXEC SP_ValidarUsuario 'mauricio@gmail.com','password123';
-EXEC SP_ValidarUsuario 'jose@gmail.com','password456';
-EXEC SP_ValidarUsuario 'luz@gmail.com','password898';
-EXEC SP_ValidarUsuario 'yesenia@gmail.com','password321';
+drop table Usuario;
+
+
+EXEC SP_ValidarUsuario 'Mauricio@gmail.com','password123';
+EXEC SP_ValidarUsuario 'Jose@gmail.com','password123';
+EXEC SP_ValidarUsuario 'Luz@gmail.com','password123';
+EXEC SP_ValidarUsuario 'Yesenia@gmail.com','password123';

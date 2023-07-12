@@ -7,8 +7,8 @@ export function useLoginForm(setIsLoggedIn) {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const validEmail = "usuario@example.com";
-  const validPassword = "contraseña";
+  const validEmail = "usuario@example.com";//email
+  const validPassword = "contraseña";//password
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -26,6 +26,20 @@ export function useLoginForm(setIsLoggedIn) {
     } else {
       setError("Contraseña incorrecta");
     }
+
+    // fetch('https://jsonplaceholder.typicode.com/posts', {
+    //   method: 'POST',
+    //   body: JSON.stringify({
+    //     email: 'foo',
+    //     body: 'bar',
+    //     userId: 1,
+    //   }),
+    //   headers: {
+    //     'Content-type': 'application/json; charset=UTF-8',
+    //   },
+    // })
+    //   .then((response) => response.json())
+    //   .then((json) => console.log(json));
   }
 
   return {
