@@ -31,6 +31,16 @@ export function NavBar({ isLoggedIn, handleLogout }) {
       >
         Terms + conditions
       </button>
+      <img
+        onClick={() => {
+          if (isLoggedIn) {
+            navigate("/Occ");
+          }
+        }}
+        className={`Logo ${isLoggedIn ? "Clickable" : ""}`}
+        src="/portal.gif"
+        alt=""
+      />
       {isLoggedIn && <LogoutButton onLogout={handleLogout} />}
     </nav>
   );
