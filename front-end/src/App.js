@@ -1,46 +1,24 @@
-import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Home from "./Pages/Home";
-import { Conditions } from "./Pages/Conditions";
-import { NavBar } from "./Pages/NavBar";
-import Footer from "./Pages/Footer";
-import { CharacterInfo } from "./Pages/CharacterInfo";
-import { Login } from "./components/Login";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   return (
-    <BrowserRouter>
-      <header className="Header">
-        <NavBar isLoggedIn={isLoggedIn} handleLogout={() => setIsLoggedIn(false)} />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
       </header>
-      <main>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              isLoggedIn ? <Navigate to="/home" /> : <Navigate to="/login" replace />
-            }
-          />
-          <Route path="/home" element={<Home />} />
-          <Route
-            path="/conditions"
-            element={
-              isLoggedIn ? <Conditions /> : <Navigate to="/login" replace />
-            }
-          />
-          <Route path="/character/:id" element={<CharacterInfo />} />
-          <Route
-            path="/login"
-            element={<Login setIsLoggedIn={setIsLoggedIn} />}
-          />
-        </Routes>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </BrowserRouter>
+    </div>
   );
 }
 
