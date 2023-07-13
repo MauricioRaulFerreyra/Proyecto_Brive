@@ -31,6 +31,12 @@ builder.Services.AddCors(Options =>
 
 // Use the CORS policy
 //app.UseCors("AllowMyOrigin");
+IServiceCollection serviceCollection = builder.Services.Configure<Microsoft.AspNetCore.Mvc.ApiBehaviorOptions>(options =>
+{
+    options.SuppressConsumesConstraintForFormFileParameters = true;
+    options.SuppressInferBindingSourcesForParameters = true;
+    options.SuppressModelStateInvalidFilter = true;
+});
 
 var app = builder.Build();
 
