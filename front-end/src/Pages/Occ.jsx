@@ -1,38 +1,18 @@
-import { useState } from "react";
-import axios from "axios";
-import { Input, Space, Alert } from 'antd';
+import { Input, Space, Alert, Card, Spin } from "antd";
+import useOccSearch from "../hooks/useOccSearch";
 
 const { Search } = Input;
 
 function Occ() {
-  const [companyName, setCompanyName] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const [successMessage, setSuccessMessage] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  const handleSearch = () => {
-    if (companyName === "") {
-      setErrorMessage("Debes ingresar el nombre de una empresa.");
-      setSuccessMessage("");
-    } else {
-      setLoading(true);
-      axios
-        .get(`https://api.occ.com.mx/empresas/${companyName}`)
-        .then((response) => {
-          const { nombre, totalEmpleos, fechaBusqueda } = response.data;
-          setSuccessMessage(
-            `Empresa: ${nombre}, Total de empleos: ${totalEmpleos}, Fecha de búsqueda: ${fechaBusqueda}`
-          );
-          setErrorMessage("");
-          setLoading(false);
-        })
-        .catch((error) => {
-          setErrorMessage("Error al realizar la búsqueda de la empresa.");
-          setSuccessMessage("");
-          setLoading(false);
-        });
-    }
-  };
+  const {
+    companyName,
+    setCompanyName,
+    errorMessage,
+    successMessage,
+    loading,
+    data,
+    handleSearch
+  } = useOccSearch();
 
   return (
     <div>
@@ -44,16 +24,32 @@ function Occ() {
         onChange={(e) => setCompanyName(e.target.value)}
         enterButton
       />
-      {errorMessage && <Alert message = {errorMessage} type="error" showIcon />}
+      {errorMessage && <Alert message={errorMessage} type="error" showIcon />}
       {successMessage && <p>{successMessage}</p>}
-      <div style={{minHeight: 550}}>
-        {
-          loading
-          ?
-          <>cargando</>
-          :
-          <>Aqui voy a poner las cartas cuando me pasen la info</>
-        }
+      <div className="card-container" style={{ minHeight: 550 }}>
+        {loading ? (
+          <Space direction="vertical" style={{ width: '100%' }}>
+            <Space>
+              <Spin tip="Loading">
+                <div className="content" />
+              </Spin>
+            </Space>
+          </Space>
+        ) : (
+          <>
+            {data.map((item, index) => (
+              <Card
+              key={index}
+              title={item.nombre}
+              bordered={false}
+              style={{ width: 300 }}
+              className="card-wrapper">
+                <p>Total de empleos: {item.totalEmpleos}</p>
+                <p>Fecha de búsqueda: {item.fechaBusqueda}</p>
+              </Card>
+            ))}
+          </>
+        )}
       </div>
     </div>
   );
