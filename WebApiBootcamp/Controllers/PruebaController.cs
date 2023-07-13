@@ -12,7 +12,7 @@ namespace WebApiBootcamp.Controllers
     public class PruebaController:ControllerBase
     {
 
-        static string connectionDB = @"Data Source=DESKTOP-C8APSN0\SQLEXPRESS;Initial Catalog=DB_ACCESO;Integrated Security=true;";
+        static string connectionDB = @"Data Source=CHEMA-PCMR\SQLEXPRESS;Initial Catalog=DB_ACCESO;Integrated Security=true;";
 
         [HttpGet]
         [Route("listar")]
@@ -30,29 +30,40 @@ namespace WebApiBootcamp.Controllers
 
         [HttpPost]
         [Route("guardar")]
-
         public dynamic GuardarUsuarios(Usuario usuario)
         {
-            
+            bool usuarioExiste = false;
+            bool passwordCorrecta = false;
 
-            using (SqlConnection cn = new SqlConnection(connectionDB))
+            using (var db = new SqlConnection(connectionDB))
             {
-                SqlCommand cmd = new SqlCommand("SP_ValidarUsuario", cn);
-                cmd.Parameters.AddWithValue("Correo", usuario.Correo);
-                cmd.Parameters.AddWithValue("Clave", usuario.Clave);
-                cmd.CommandType = CommandType.StoredProcedure;
+                var sql = "SELECT COUNT(*) FROM Usuario WHERE Correo = @Correo";
+                int count = db.ExecuteScalar<int>(sql, new { Correo = usuario.Correo });
+                usuarioExiste = count > 0;
 
-                cn.Open();
-                usuario.IdUsuario = Convert.ToInt32(cmd.ExecuteScalar().ToString());
-
+                if (usuarioExiste)
+                {
+                    sql = "SELECT COUNT(*) FROM Usuario WHERE Correo = @Correo AND Clave = @Clave";
+                    count = db.ExecuteScalar<int>(sql, new { Correo = usuario.Correo, Clave = usuario.Clave });
+                    passwordCorrecta = count > 0;
+                }
             }
 
-            if (usuario.IdUsuario != 0)
+            if (!usuarioExiste)
             {
                 return new
                 {
-                    sucess = true,
-                    message = "usuario registrado",
+                    success = false,
+                    message = "El usuario no existe",
+                    result = usuario.Correo
+                };
+            }
+            else if (!passwordCorrecta)
+            {
+                return new
+                {
+                    success = false,
+                    message = "La contraseña es incorrecta",
                     result = usuario.Correo
                 };
             }
@@ -60,11 +71,12 @@ namespace WebApiBootcamp.Controllers
             {
                 return new
                 {
-                    success = false,
-                    message = "usuario no registrado",
+                    success = true,
+                    message = "Inicio de sesión exitoso",
                     result = usuario.Correo
                 };
             }
         }
+
     }
 }
