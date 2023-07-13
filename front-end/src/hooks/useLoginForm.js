@@ -10,13 +10,6 @@ export function useLoginForm(setIsLoggedIn) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    // const getPrueba=()=> { 
-    //   return fetch("https://localhost:7146/prueba/listar")
-    //     .then((response) => response.json())
-    //     .then((json) => console.log(json))
-    //     .catch(() => console.log("No funciona"));
-    // };
-    // getPrueba();
     if (email === "" || password === "") {
       setError("Todos los campos son obligatorios");
       return;
@@ -37,21 +30,6 @@ export function useLoginForm(setIsLoggedIn) {
           
         })
         .catch(err => console.log(err));
-
-    // fetch('https://jsonplaceholder.typicode.com/posts', {
-    //   method: 'POST',
-    //   body: JSON.stringify({
-    //     email: 'foo',
-    //     body: 'bar',
-    //     userId: 1,
-    //   }),
-    //   headers: {
-    //     'Content-type': 'application/json; charset=UTF-8',
-    //   },
-    // })
-    //   .then((response) => response.json())
-    //   .then((json) => console.log(json));
-    // }
 
     // if (email === validEmail && password === validPassword) {
     //   setError("");
