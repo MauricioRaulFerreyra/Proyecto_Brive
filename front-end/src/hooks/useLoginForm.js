@@ -10,7 +10,6 @@ export function useLoginForm(setIsLoggedIn) {
 
   async function handleSubmit(e) {
     e.preventDefault();
-
     if (email === "" || password === "") {
       setError("Todos los campos son obligatorios");
       return;
@@ -20,19 +19,17 @@ export function useLoginForm(setIsLoggedIn) {
       const response = await axios.post(
         "https://localhost:7146/prueba/guardar/api/usuario/validar",
         {
-          method: 'POST',
-          body: JSON.stringify({
-            correo: email,
-            clave: password,
-          }),
+          correo: email,
+          clave: password
+        },
+        {
           headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-          },
+            'Content-Type': 'application/json'
+          }
         }
-      )
-      .then((response) => response.json())
-      .then((json) => console.log(json));
+      );
 
+    
       const { success, message } = response.data;
 
       if (success) {
