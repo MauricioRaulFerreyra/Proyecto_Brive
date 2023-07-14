@@ -85,3 +85,60 @@ ORDER BY Fecha_Busqueda DESC;
 
 SELECT Numero_Fila, Nombre_Empresa, Total_Empleos, Fecha_Busqueda
 FROM HistorialBusquedas;
+
+
+CREATE TABLE CompanyA (
+    Id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+    Position1 VARCHAR(50),
+    Position2 VARCHAR(50),
+    Position3 VARCHAR(50),
+    Salary DECIMAL(10,2),
+    Location VARCHAR(50)
+);
+GO
+
+CREATE TABLE CompanyB (
+    Id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+    Position1 VARCHAR(50),
+    Position2 VARCHAR(50),
+    Position3 VARCHAR(50),
+    Salary DECIMAL(10,2),
+    Location VARCHAR(50)
+);
+GO
+
+CREATE TABLE CompanyC (
+    Id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+    Position1 VARCHAR(50),
+    Position2 VARCHAR(50),
+    Position3 VARCHAR(50),
+    Salary DECIMAL(10,2),
+    Location VARCHAR(50)
+);
+GO
+
+INSERT INTO CompanyA (Position1, Position2, Position3, Salary, Location)
+VALUES ('Position A1', 'Position A2', 'Position A3', 5000, 'Location A');
+GO
+
+INSERT INTO CompanyB (Position1, Position2, Position3, Salary, Location)
+VALUES ('Position B1', 'Position B2', 'Position B3', 6000, 'Location B');
+GO
+
+INSERT INTO CompanyC (Position1, Position2, Position3, Salary, Location)
+VALUES ('Position C1', 'Position C2', 'Position C3', 7000, 'Location C');
+GO
+
+SELECT *
+FROM CompanyB;
+GO
+
+SELECT *
+FROM CompanyA
+JOIN CompanyB ON CompanyA.Id = CompanyB.Id;
+GO
+
+SELECT *
+FROM CompanyB
+JOIN CompanyC ON CompanyB.Id = CompanyC.Id;
+GO
