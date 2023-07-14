@@ -1,7 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
 export default function Footer() {
-  const navigate = useNavigate();
   return (
     <div className="footer-container">
       <h1>Contenido del footer</h1>
