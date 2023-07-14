@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using System.Data.SqlClient;
+using WebApiBootcamp.Models;
 
 namespace WebApiBootcamp.Controllers
 {
@@ -44,7 +45,7 @@ namespace WebApiBootcamp.Controllers
 
                 cn.Open();
                 usuario.IdUsuario = Convert.ToInt32(cmd.ExecuteScalar().ToString());
-
+                cn.Close();
             }
 
             if (usuario.IdUsuario != 0)

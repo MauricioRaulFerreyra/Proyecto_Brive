@@ -22,7 +22,7 @@ export function useLoginForm(setIsLoggedIn) {
       return;
     }
 
-    fetch('https://localhost:7146/prueba/listar').then(res => res.json())
+    fetch('https://localhost:7146/usuario/listar').then(res => res.json())
         .then(data => {
           const userExist = data.filter(user => user.correo === email && user.clave === password);
 

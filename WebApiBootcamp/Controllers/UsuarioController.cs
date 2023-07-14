@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Data;
 using Dapper;
+using WebApiBootcamp.Models;
 
 namespace WebApiBootcamp.Controllers
 {
@@ -80,26 +81,6 @@ namespace WebApiBootcamp.Controllers
             }
         }
 
-        //[HttpPost]
-        //[Route("guardar")]
-        //public dynamic GuardarUsuarios(Usuario usuario)
-        //{
-        //    if (usuario.Correo == "algo@algo.com" && usuario.Contraseña == "password") {
-        //        usuario.IdUsuario = 2;
         
-        //        return new
-        //        {
-        //            success = true,
-        //            message = "Usuario registrado",
-        //            result = usuario
-        //        };
-        //    } else {
-        //        return new
-        //        {
-        //            success = false,
-        //            message = "Correo o contraseña incorrectos"
-        //        };
-        //    }
-        //}
     }
 }
