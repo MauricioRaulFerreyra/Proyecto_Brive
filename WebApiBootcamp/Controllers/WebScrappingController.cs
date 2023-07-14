@@ -61,25 +61,28 @@ namespace WebApiBootcamp.Controllers
 
         public dynamic GuardarEmpresa(string empresa)
         {
-            
-              List<string> MisVacantes = new List<string>();
-           
-              HtmlWeb oWeb = new HtmlWeb();
-              HtmlDocument empr = oWeb.Load("https://www.occ.com.mx/empleos/"+"de-"+ empresa + "/");
 
-              foreach (var item in empr.DocumentNode.CssSelect("h2"))
-              {
-                MisVacantes.Add(item.InnerHtml);         
-              }
+                List<string> MisVacantes = new List<string>();
 
-            //using (var db = new SqlConnection(connectionDB))
-            //{
-            //    var sqlInsert = "insert into TABLAEMPRESA(Nombre,Vacantes) Values (@Nombre,@Vacantes)";
-            //    var result = db.Execute(sqlInsert ,(empresa, MisVacantes, DateTime.Now));
-            //};
+                HtmlWeb oWeb = new HtmlWeb();
+                string url = "https://www.occ.com.mx/empleos/de-" + empresa + "/";
+                HtmlDocument empr = oWeb.Load(url);
 
+                foreach (var item in empr.DocumentNode.CssSelect("h2"))
+                {
+                    MisVacantes.Add(item.InnerHtml);
+                }
 
-            return MisVacantes;
+                using (var db = new SqlConnection(connectionDB))
+                {
+                    var sqlInsert = "INSERT INTO TABLAEMPRESA (Nombre, Vacantes, Fecha) VALUES (@Nombre, @Vacantes, @Fecha)";
+                    var parameters = new { Nombre = empresa, Vacantes = string.Join(", ", MisVacantes), Fecha = DateTime.Now };
+                    var result = db.Execute(sqlInsert, parameters);
+                }
+
+                return MisVacantes;
+            }
+
 
         }
 
@@ -110,4 +113,4 @@ namespace WebApiBootcamp.Controllers
             }
         }
     }
-}
+

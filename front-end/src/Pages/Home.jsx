@@ -15,7 +15,6 @@ function Home() {
   async function consoleCharacters() {
     const resp = await getCharacters();
     setCharacters(resp);
-    //console.log(resp);
   }
 
   useEffect(() => {

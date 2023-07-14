@@ -12,7 +12,11 @@ namespace WebApiBootcamp.Controllers
     public class UsuarioController : ControllerBase
     {
 
+<<<<<<< HEAD
         static string connectionDB = @"Data Source=localhost;Initial Catalog=DB_ACCESO;User Id=sa;Password=12345OHdf%e;";
+=======
+        static string connectionDB = @"Data Source=CHEMA-PCMR\SQLEXPRESS;Initial Catalog=DB_ACCESO;Integrated Security=true;";
+>>>>>>> c90b136eb6432b0e8f2a6ef1d2c0e1ac3ac6623d
 
         [HttpGet]
         [Route("listar")]
