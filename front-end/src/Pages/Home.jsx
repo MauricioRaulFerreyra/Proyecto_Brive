@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Characters } from "../components/Characters";
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 
-function Home() {
+function Home({ isLoggedIn }) {
   const [characters, setCharacters] = useState([]);
-  
+  const navigate = useNavigate();
+
   function getCharacters(pageNumber = 1) {
     return fetch("https://rickandmortyapi.com/api/character")
       .then((response) => response.json())
@@ -22,7 +24,13 @@ function Home() {
     consoleCharacters();
   }, []);
 
-  
+  // Verificar si el usuario está logueado, de lo contrario, redirigir a la página de inicio de sesión
+  useEffect(() => {
+    if (!isLoggedIn) {
+      navigate("/login");
+    }
+  }, [isLoggedIn, navigate]);
+
   return (
     <div className="App">
       <div className="Hero">
@@ -34,7 +42,10 @@ function Home() {
         <h1>Character list </h1>
         <hr />
         <div className="card-container">
-          {characters.length > 0 && characters.map((character) => <Characters key={character.id} character={character} />)}
+          {characters.length > 0 &&
+            characters.map((character) => (
+              <Characters key={character.id} character={character} />
+            ))}
         </div>
       </main>
 
