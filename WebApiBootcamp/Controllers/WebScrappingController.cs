@@ -80,7 +80,7 @@ namespace WebApiBootcamp.Controllers
                     var result = db.Execute(sqlInsert, parameters);
                 }
 
-                return MisVacantes;
+            return new { MisVacantes , DateTime.Now};
             }
 
 
