@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { LogoutButton } from "../components/LogoutButton";
+import { LogoutButton } from "./LogoutButton";
 import { Button } from 'antd';
 
 export function NavBar({ isLoggedIn, handleLogout }) {

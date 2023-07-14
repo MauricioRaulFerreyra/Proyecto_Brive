@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Pages/Home";
 import { Conditions } from "./Pages/Conditions";
-import { NavBar } from "./Pages/NavBar";
-import Footer from "./Pages/Footer";
+import { NavBar } from "./components/NavBar";
+import Footer from "./components/Footer";
 import { CharacterInfo } from "./Pages/CharacterInfo";
 import { Login } from "./components/Login";
 import Occ from "./Pages/Occ";
@@ -31,7 +31,7 @@ function App() {
               )
             }
           />
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home isLoggedIn={isLoggedIn} />} />
           <Route
             path="/conditions"
             element={

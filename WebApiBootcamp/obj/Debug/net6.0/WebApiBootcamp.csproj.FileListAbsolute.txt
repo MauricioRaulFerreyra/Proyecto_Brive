@@ -77,6 +77,7 @@ C:/Users/mauri/OneDrive/Escritorio/Proyecto_Bootcamp_Brive/WebApiBootcamp/bin/De
 /Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/obj/Debug/net6.0/WebApiBootcamp.genruntimeconfig.cache
 /Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/obj/Debug/net6.0/ref/WebApiBootcamp.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\appsettings.json
 C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.exe
@@ -129,6 +130,8 @@ C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\refint\WebApiBootcamp.dll
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.pdb
 =======
+=======
+>>>>>>> a599276d827026a37276304a7910bda2424adbb5
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\appsettings.json
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.exe
@@ -147,7 +150,10 @@ C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+<<<<<<< HEAD
 >>>>>>> 29b7862d63766df9f7f3b37b8522fa317457d8f7
+=======
+>>>>>>> a599276d827026a37276304a7910bda2424adbb5
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.csproj.AssemblyReference.cache
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.AssemblyInfoInputs.cache
@@ -156,8 +162,11 @@ C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.MvcApplicationPartsAssemblyInfo.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c90b136eb6432b0e8f2a6ef1d2c0e1ac3ac6623d
 =======
+=======
+>>>>>>> a599276d827026a37276304a7910bda2424adbb5
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.WebApiBootcamp.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.build.WebApiBootcamp.props
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WebApiBootcamp.props
@@ -172,4 +181,7 @@ C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.pdb
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.genruntimeconfig.cache
 C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\ref\WebApiBootcamp.dll
+<<<<<<< HEAD
 >>>>>>> 29b7862d63766df9f7f3b37b8522fa317457d8f7
+=======
+>>>>>>> a599276d827026a37276304a7910bda2424adbb5
