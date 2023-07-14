@@ -83,8 +83,13 @@ Clave VARCHAR(50) NOT NULL)
 -- FROM HistorialBusquedas
 -- ORDER BY Fecha_Busqueda DESC;
 
+<<<<<<< HEAD
 -- SELECT Numero_Fila, Nombre_Empresa, Total_Empleos, Fecha_Busqueda
 -- FROM HistorialBusquedas;
+=======
+SELECT Numero_Fila, Nombre_Empresa, Total_Empleos, Fecha_Busqueda
+FROM HistorialBusquedas;
+>>>>>>> 595c0e825c885d9f395d66b2786653be6906fd26
 
 
 -- CREATE TABLE CompanyA (
