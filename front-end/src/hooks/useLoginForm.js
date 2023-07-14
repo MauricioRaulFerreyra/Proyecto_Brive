@@ -11,13 +11,6 @@ export function useLoginForm(setIsLoggedIn) {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    // const getPrueba=()=> { 
-    //   return fetch("https://localhost:7146/prueba/listar")
-    //     .then((response) => response.json())
-    //     .then((json) => console.log(json))
-    //     .catch(() => console.log("No funciona"));
-    // };
-    // getPrueba();
     if (email === "" || password === "") {
       setError("Todos los campos son obligatorios");
       return;
