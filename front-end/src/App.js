@@ -31,7 +31,7 @@ function App() {
               )
             }
           />
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home isLoggedIn={isLoggedIn} />} />
           <Route
             path="/conditions"
             element={
