@@ -14,14 +14,13 @@ function Home({ isLoggedIn }) {
       .catch(() => []);
   }
 
-  async function consoleCharacters() {
-    const resp = await getCharacters();
-    setCharacters(resp);
-    console.log(resp);
+  async function fetchCharacters() {
+    const charactersData = await getCharacters();
+    setCharacters(charactersData);
   }
 
   useEffect(() => {
-    consoleCharacters();
+    fetchCharacters();
   }, []);
 
   // Verificar si el usuario está logueado, de lo contrario, redirigir a la página de inicio de sesión
@@ -31,6 +30,10 @@ function Home({ isLoggedIn }) {
     }
   }, [isLoggedIn, navigate]);
 
+  const handleCharacterClick = (characterId) => {
+    navigate(`/character/${characterId}`);
+  };
+
   return (
     <div className="App">
       <div className="Hero">
@@ -39,17 +42,18 @@ function Home({ isLoggedIn }) {
       </div>
 
       <main>
-        <h1>Character list </h1>
+        <h1>Character list</h1>
         <hr />
         <div className="card-container">
-          {characters.length > 0 &&
-            characters.map((character) => (
-              <Characters key={character.id} character={character} />
-            ))}
+          {characters.map((character) => (
+            <Characters
+              key={character.id}
+              character={character}
+              onCharacterClick={handleCharacterClick}
+            />
+          ))}
         </div>
       </main>
-
-      <footer></footer>
     </div>
   );
 }

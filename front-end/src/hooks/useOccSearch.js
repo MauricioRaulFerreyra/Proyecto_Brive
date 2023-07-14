@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 const API_URL = "https://api.generadordni.es/v2/profiles/company";
+const SPECIAL_CHARACTERS_REGEX = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/;
 
 function useOccSearch() {
   const [companyName, setCompanyName] = useState("");
@@ -13,6 +14,12 @@ function useOccSearch() {
   const handleSearch = async (value) => {
     if (value === "") {
       setErrorMessage("Debes ingresar el nombre de una empresa.");
+      setSuccessMessage("");
+      return;
+    }
+
+    if (SPECIAL_CHARACTERS_REGEX.test(value)) {
+      setErrorMessage("No se puede realizar búsquedas con caracteres especiales.");
       setSuccessMessage("");
       return;
     }

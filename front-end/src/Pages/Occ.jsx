@@ -1,4 +1,4 @@
-import { Input, Space, Alert, Card, Spin, Table } from "antd";
+import { Input, Space, Alert, Card, Spin, Table, Empty } from "antd";
 import useOccSearch from "../hooks/useOccSearch";
 import useOccHistory from "../hooks/useOccHistory";
 
@@ -72,13 +72,18 @@ function Occ() {
       {successMessage && <p>{successMessage}</p>}
       <div className="card-container" style={{ minHeight: 550 }}>
         {loading ? (
-          <Space direction="vertical" style={{ width: "100%" }}>
-            <Space>
-              <Spin tip="Loading">
-                <div className="content" />
-              </Spin>
-            </Space>
-          </Space>
+          // <Space direction="vertical" style={{ width: "100%" }}>
+          //   <Space>
+          //     <Spin tip="Loading">
+          //       <div className="content" />
+          //     </Spin>
+          //   </Space>
+          // </Space>
+          <div className="spin-container">
+            <div className="spin-container-center">
+              <div className="lds-facebook"><div></div><div></div><div></div></div>
+            </div>
+          </div>
         ) : (
           <>
             {data.map((item, index) => (
@@ -108,7 +113,7 @@ function Occ() {
           />
         </>
       ) : (
-        <p>No hay información de historial disponible.</p>
+        <Empty className="no-result" description="No hay información de historial disponible." />
       )}
     </div>
   );
