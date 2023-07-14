@@ -75,7 +75,7 @@ namespace WebApiBootcamp.Controllers
 
                 using (var db = new SqlConnection(connectionDB))
                 {
-                    var sqlInsert = "INSERT INTO TABLAEMPRESA (Nombre, Vacantes, Fecha) VALUES (@Nombre, @Vacantes, @Fecha)";
+                    var sqlInsert = "INSERT INTO DB_ACCESO.dbo.TABLAEMPRESA (Nombre, Vacantes, Fecha) VALUES (@Nombre, @Vacantes, @Fecha)";
                     var parameters = new { Nombre = empresa, Vacantes = string.Join(", ", MisVacantes), Fecha = DateTime.Now };
                     var result = db.Execute(sqlInsert, parameters);
                 }
