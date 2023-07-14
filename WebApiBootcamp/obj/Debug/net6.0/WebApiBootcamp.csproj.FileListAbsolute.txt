@@ -76,3 +76,133 @@ C:/Users/mauri/OneDrive/Escritorio/Proyecto_Bootcamp_Brive/WebApiBootcamp/bin/De
 /Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/obj/Debug/net6.0/WebApiBootcamp.pdb
 /Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/obj/Debug/net6.0/WebApiBootcamp.genruntimeconfig.cache
 /Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/obj/Debug/net6.0/ref/WebApiBootcamp.dll
+<<<<<<< HEAD
+<<<<<<< HEAD
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\appsettings.json
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.exe
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.deps.json
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.runtimeconfig.json
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.pdb
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\Dapper.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.csproj.AssemblyReference.cache
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.AssemblyInfoInputs.cache
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.AssemblyInfo.cs
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.csproj.CoreCompileInputs.cache
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.WebApiBootcamp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.build.WebApiBootcamp.props
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WebApiBootcamp.props
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WebApiBootcamp.props
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\scopedcss\bundle\WebApiBootcamp.styles.css
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.csproj.CopyComplete
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\refint\WebApiBootcamp.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.pdb
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.genruntimeconfig.cache
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\obj\Debug\net6.0\ref\WebApiBootcamp.dll
+<<<<<<< HEAD
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\FSharp.Core.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\ScrapySharp.Core.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\ScrapySharp.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\cs\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\de\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\en\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\es\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\fr\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\it\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\ja\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\ko\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\pl\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\pt-BR\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\ru\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\tr\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\zh-Hans\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\zh-Hant\FSharp.Core.resources.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\mauri\OneDrive\Escritorio\Proyecto_Bootcamp_Brive\WebApiBootcamp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+=======
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\refint\WebApiBootcamp.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.pdb
+=======
+=======
+>>>>>>> a599276d827026a37276304a7910bda2424adbb5
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\appsettings.json
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.exe
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.deps.json
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.runtimeconfig.json
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\WebApiBootcamp.pdb
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\Dapper.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+<<<<<<< HEAD
+>>>>>>> 29b7862d63766df9f7f3b37b8522fa317457d8f7
+=======
+>>>>>>> a599276d827026a37276304a7910bda2424adbb5
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.csproj.AssemblyReference.cache
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.AssemblyInfoInputs.cache
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.AssemblyInfo.cs
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.csproj.CoreCompileInputs.cache
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.MvcApplicationPartsAssemblyInfo.cache
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c90b136eb6432b0e8f2a6ef1d2c0e1ac3ac6623d
+<<<<<<< HEAD
+>>>>>>> 03750c63d8943386f5b1efde48b0a9e810550f7d
+=======
+=======
+=======
+>>>>>>> a599276d827026a37276304a7910bda2424adbb5
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.WebApiBootcamp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.build.WebApiBootcamp.props
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WebApiBootcamp.props
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WebApiBootcamp.props
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\scopedcss\bundle\WebApiBootcamp.styles.css
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.csproj.CopyComplete
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\refint\WebApiBootcamp.dll
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.pdb
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\WebApiBootcamp.genruntimeconfig.cache
+C:\Users\hdsch\Desktop\Proyecto\FrontEnd_Proyecto\WebApiBootcamp\obj\Debug\net6.0\ref\WebApiBootcamp.dll
+<<<<<<< HEAD
+>>>>>>> 29b7862d63766df9f7f3b37b8522fa317457d8f7
+=======
+>>>>>>> a599276d827026a37276304a7910bda2424adbb5
+>>>>>>> 595c0e825c885d9f395d66b2786653be6906fd26

@@ -1,11 +1,38 @@
-footer {
+.footer-container {
   background: black;
-  padding: 60px 0 30px 0;
+  padding: 60px 0 30px 30px;
   margin: auto;
   overflow: hidden;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: #f0f0f0;
 }
 
+.team-name {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 
-.footer-container h1{
-    color: white;
+.team-members {
+  float: right;
+  text-align: right;
+}
+
+.team-members h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.team-members ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-members li {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 5px;
 }

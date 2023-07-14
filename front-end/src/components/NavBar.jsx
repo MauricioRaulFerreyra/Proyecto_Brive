@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { LogoutButton } from "../components/LogoutButton";
+import { LogoutButton } from "./LogoutButton";
+import { Button } from 'antd';
 
 export function NavBar({ isLoggedIn, handleLogout }) {
   const navigate = useNavigate();
@@ -25,12 +26,30 @@ export function NavBar({ isLoggedIn, handleLogout }) {
         src="/logo.png"
         alt=""
       />
-      <button
+      {/* <button
         onClick={handleTermsClick}
         className={`Terms ${isLoggedIn ? "Clickable" : ""}`}
       >
         Terms + conditions
-      </button>
+      </button> */}
+      <Button
+        type="link"
+        size="large"
+        onClick={handleTermsClick}
+        className={`Terms ${isLoggedIn ? "Clickable" : ""}`}
+      >
+        Terms + conditions
+      </Button>
+      <img
+        onClick={() => {
+          if (isLoggedIn) {
+            navigate("/Occ");
+          }
+        }}
+        className={`Logo ${isLoggedIn ? "Clickable" : ""}`}
+        src="/portal.gif"
+        alt=""
+      />
       {isLoggedIn && <LogoutButton onLogout={handleLogout} />}
     </nav>
   );

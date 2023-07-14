@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,19 +9,38 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Enable CORS policy
-builder.Services.AddCors(options =>
+//CORS
+builder.Services.AddCors(Options =>
 {
-    options.AddPolicy("AllowMyOrigin",
-        builder => builder.WithOrigins("http://localhost:3000")
-                           .AllowAnyMethod()
-                           .AllowAnyHeader());
+    Options.AddPolicy("ActivarCors", app =>
+    {
+        app.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
+
+
+
+// Enable CORS policy
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowMyOrigin",
+//        builder => builder.WithOrigins("http://localhost:3000")
+//                           .AllowAnyMethod()
+//                           .AllowAnyHeader());
+//});
+
+// Use the CORS policy
+//app.UseCors("AllowMyOrigin");
+IServiceCollection serviceCollection = builder.Services.Configure<Microsoft.AspNetCore.Mvc.ApiBehaviorOptions>(options =>
+{
+    options.SuppressConsumesConstraintForFormFileParameters = true;
+    options.SuppressInferBindingSourcesForParameters = true;
+    options.SuppressModelStateInvalidFilter = true;
 });
 
 var app = builder.Build();
 
-// Use the CORS policy
-app.UseCors("AllowMyOrigin");
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -28,8 +49,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
 
+app.UseCors("ActivarCors");
 app.UseAuthorization();
 
 app.MapControllers();

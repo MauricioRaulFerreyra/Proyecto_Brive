@@ -1,4 +1,4 @@
-﻿namespace WebApiBootcamp
+﻿namespace WebApiBootcamp.Models
 {
     public class Usuario
     {

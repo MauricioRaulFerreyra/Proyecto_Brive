@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/WebApiBootcamp.csproj": {}
+    "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj": {}
   },
   "projects": {
-    "/Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/WebApiBootcamp.csproj": {
+    "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/WebApiBootcamp.csproj",
+        "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj",
         "projectName": "WebApiBootcamp",
-        "projectPath": "/Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/WebApiBootcamp.csproj",
-        "packagesPath": "/Users/yessvizcarra/.nuget/packages/",
-        "outputPath": "/Users/yessvizcarra/Documents/codigo_bootcamp/FrontEnd_Proyecto/WebApiBootcamp/obj/",
+        "projectPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\WebApiBootcamp.csproj",
+        "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\Proyecto_Bootcamp_Brive\\WebApiBootcamp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/yessvizcarra/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +44,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.143, )"
+            },
+            "ScrapySharp": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -72,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
