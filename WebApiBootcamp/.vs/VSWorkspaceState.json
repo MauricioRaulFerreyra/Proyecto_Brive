@@ -1,19 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-<<<<<<< HEAD
-    "\\Controllers",
-    "\\Models"
-  ],
-  "SelectedNode": "\\Controllers\\WebScrappingController.cs",
-=======
     "\\Controllers"
   ],
-<<<<<<< HEAD
-  "SelectedNode": "\\Controllers\\UsuarioController.cs",
->>>>>>> 03750c63d8943386f5b1efde48b0a9e810550f7d
-=======
-  "SelectedNode": "\\Controllers\\PruebaController.cs",
->>>>>>> 595c0e825c885d9f395d66b2786653be6906fd26
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
