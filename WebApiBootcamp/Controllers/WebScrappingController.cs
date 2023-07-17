@@ -34,8 +34,10 @@ namespace WebApiBootcamp.Controllers
 
         [HttpPost]
         [Route("guardar")]
-        public async Task<dynamic> GuardarEmpresa(string empresa)
+        public async Task<dynamic> GuardarEmpresa([FromBody] Empresa request)
         {
+            string? empresa = request.Nombre;
+
             List<string> MisVacantes = new List<string>();
 
             string url = "https://www.occ.com.mx/empleos/de-" + empresa + "/";
@@ -64,9 +66,9 @@ namespace WebApiBootcamp.Controllers
             foreach (var item in empr.DocumentNode.CssSelect("h2"))
             {
                 string vacante = item.InnerHtml;
-                if (vacante.Length > 800)
+                if (vacante.Length > 200)
                 {
-                    vacante = vacante.Substring(0, 800);
+                    vacante = vacante.Substring(0, 200);
                 }
                 MisVacantes.Add(vacante);
             }
@@ -78,7 +80,8 @@ namespace WebApiBootcamp.Controllers
                 var result = db.Execute(sqlInsert, parameters);
             }
 
-            return new { MisVacantes, DateTime.Now };
+            return new { totalEmpleos = MisVacantes, fechaBusqueda = DateTime.Now };
+
         }
 
 

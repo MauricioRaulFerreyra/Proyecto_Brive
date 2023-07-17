@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bin",
     "\\Controllers"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\Controllers\\WebScrappingController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -13,9 +13,7 @@ namespace WebApiBootcamp.Controllers
     {
 
 
-        static string connectionDB = @"Data Source=localhost;Initial Catalog=DB_ACCESO;User Id=sa;Password=12345OHdf%e;";
-
-        //static string connectionDB = @"Data Source=CHEMA-PCMR\SQLEXPRESS;Initial Catalog=DB_ACCESO;Integrated Security=true;";
+        static string connectionDB = @"Data Source=DESKTOP-C8APSN0\SQLEXPRESS;Initial Catalog=DB_ACCESO;Integrated Security=true;";
 
 
         [HttpGet]
@@ -32,19 +30,6 @@ namespace WebApiBootcamp.Controllers
             return lst;
         }
 
-        [HttpGet]
-        [Route("listarXid")]
-
-        public dynamic ListarUsuariosXid(int Id)
-        {
-            return new Usuario
-            {
-                IdUsuario = Id,
-                Correo = "mauri",
-                Clave = "123"
-            };
-          
-        }
 
         [HttpPost]
         [Route("guardar")]
