@@ -28,7 +28,7 @@ export function Login({ setIsLoggedIn }) {
           },
         }
       );
-
+      //console.log(response.data.success);
       const { success, message } = response.data;
 
       if (success) {

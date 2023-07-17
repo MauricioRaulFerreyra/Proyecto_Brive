@@ -5,15 +5,7 @@ import useOccHistory from "../hooks/useOccHistory";
 const { Search } = Input;
 
 function Occ() {
-  const {
-    companyName,
-    setCompanyName,
-    errorMessage,
-    successMessage,
-    loading,
-    data,
-    handleSearch,
-  } = useOccSearch();
+  const { companyName, setCompanyName, errorMessage, successMessage, loading, data, handleSearch } = useOccSearch();
 
   const { searchHistory, addToSearchHistory } = useOccHistory();
 
@@ -49,13 +41,29 @@ function Occ() {
   ];
 
   const handleSearchAndUpdateHistory = async (value) => {
-    handleSearch(value);
-    addToSearchHistory({
-      Numero_Fila: searchHistory.length + 1,
-      Nombre_Empresa: value,
-      Total_Empleos: data.length > 0 ? data[0].totalEmpleos : 0,
-      Fecha_Busqueda: new Date().toISOString().split("T")[0],
-    });
+    await handleSearch(value);
+    async function listarEmpresas() {
+      try {
+        const response = await fetch("https://localhost:7146/WebScrapping/listar");
+        const results = await response.json();
+        return results;
+      } catch (error) {
+        console.error("Error al obtener la lista de empresas:", error);
+        return [];
+      }
+    }
+
+    const response = await listarEmpresas();
+    //console.log(response);
+    for (let i in response) {
+      const updatedSearchHistory = {
+        Numero_Fila: searchHistory.length + 1,
+        Nombre_Empresa: response[i].nombre,
+        Total_Empleos: !response[i].vacantes ? 0 : response[i].vacantes.length,
+        Fecha_Busqueda: response[i].fecha,
+      };
+      addToSearchHistory(updatedSearchHistory); // Añadimos los elementos al historial
+    }
   };
 
   return (
@@ -70,7 +78,7 @@ function Occ() {
       />
       {errorMessage && <Alert message={errorMessage} type="error" showIcon />}
       {successMessage && <p>{successMessage}</p>}
-      <div className="card-container" style={{ minHeight: 550 }}>
+      <div className="card-container" style={{ minHeight: 350 }}>
         {loading ? (
           // <Space direction="vertical" style={{ width: "100%" }}>
           //   <Space>
@@ -81,7 +89,11 @@ function Occ() {
           // </Space>
           <div className="spin-container">
             <div className="spin-container-center">
-              <div className="lds-facebook"><div></div><div></div><div></div></div>
+              <div className="lds-facebook">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
         ) : (
@@ -89,13 +101,17 @@ function Occ() {
             {data.map((item, index) => (
               <Card
                 key={index}
-                title={item.name}
+                title={item.Nombre.toUpperCase()}
                 bordered={false}
-                style={{ width: 300 }}
+                style={{ width: 800, height: 300 }}
                 className="card-wrapper"
               >
-                <p>Total de empleos: {item.totalEmpleos}</p>
-                <p>Fecha de búsqueda: {item.fechaBusqueda}</p>
+                <p>
+                  <strong>Total de empleos: </strong> {item.totalEmpleos}
+                </p>
+                <p>
+                  <strong>Fecha de búsqueda: </strong> {item.fechaBusqueda}
+                </p>
               </Card>
             ))}
           </>
@@ -104,13 +120,7 @@ function Occ() {
       <h2>Historial de búsquedas</h2>
       {searchHistory.length > 0 ? (
         <>
-          <Table
-            dataSource={searchHistory}
-            columns={historyColumns}
-            pagination={false}
-            className="history-table"
-            rowKey="Numero_Fila"
-          />
+          <Table dataSource={searchHistory} columns={historyColumns} pagination={false} className="history-table" rowKey="Numero_Fila" />
         </>
       ) : (
         <Empty className="no-result" description="No hay información de historial disponible." />

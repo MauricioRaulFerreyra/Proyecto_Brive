@@ -1,7 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API_URL = "https://api.generadordni.es/v2/profiles/company";
+//const API_URL = "https://api.generadordni.es/v2/profiles/company";
+const API_URL = "https://localhost:7146/WebScrapping/guardar";
 const SPECIAL_CHARACTERS_REGEX = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/;
 
 function useOccSearch() {
@@ -10,7 +11,7 @@ function useOccSearch() {
   const [successMessage, setSuccessMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
-
+  const arrayData = [];
   const handleSearch = async (value) => {
     if (value === "") {
       setErrorMessage("Debes ingresar el nombre de una empresa.");
@@ -29,22 +30,17 @@ function useOccSearch() {
     setSuccessMessage("");
 
     try {
-      const response = await axios.get(API_URL);
-      const { data: companyData } = response;
+      const response = await axios.post(API_URL, {
+        nombre: value,
+      });
 
-      const currentDate = new Date().toISOString().split("T")[0];
-      const filteredData = companyData.map((company) => ({
-        name: company.name,
-        totalEmpleos: company.address_number,
-        fechaBusqueda: currentDate,
-      }));
+      let companyData = response.data;
 
-      const filteredByName = filteredData.filter((company) =>
-        company.name.toLowerCase().includes(value.toLowerCase())
-      );
+      companyData.Nombre = value;
 
-      if (filteredByName.length > 0) {
-        setData(filteredByName);
+      if (companyData.Nombre.length > 0) {
+        arrayData.push(companyData);
+        setData(arrayData);
         setSuccessMessage("Búsqueda exitosa");
       } else {
         setData([]);

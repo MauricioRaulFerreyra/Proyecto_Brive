@@ -19,8 +19,8 @@ export function useLoginForm(setIsLoggedIn) {
       const response = await axios.post(
         "https://localhost:7146/prueba/guardar",
         {
-          correo: email,
-          clave: password,
+          Correo: email,
+          Clave: password,
         },
         {
           headers: {
